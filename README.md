@@ -19,6 +19,8 @@ sealed class ServicesInit : MonoBehaviour
         if (instance != null) return;
         instance = Instantiate(_appLovinPrefab);
         DontDestroyOnLoad(instance.gameObject);
+        // or use inject container
+        // or service locator
     }
 }
 ```
